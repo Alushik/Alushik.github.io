@@ -67,6 +67,14 @@
 		Обычно применяется для иллюстраций, фрагментов кода, схем, графиков, диаграмм и др.
 		Элемент <code>figcaption</code> содержит описание для элемента <code>figure</code>. Он должен быть первым или последним элементом в группе.</p>
 
+		<figure>
+			<img src="lab1/images/redcat.jpg"
+     		srcset="lab1/images/redcat.jpg 600w"
+     		sizes="(max-width: 600px) 100vw, 600px">
+
+			<figcaption> Это красный кот</figcaption>
+		</figure>
+
 		<h2>Элемент picture</h2>
 		<p>
 		HTML-элемент <code>picture</code> служит контейнером для одного или более элементов 
@@ -76,6 +84,11 @@
 		найдено не будет, то будет выбран файл, указанный  атрибутом  <code>src</code> элемента <code>img</code>. 
 		Затем выбранное изображение отображается в пространстве, занятом элементом <code>img</code>. 
 		</p>
+		<picture>
+			<source srcset = "lab1/images/mushroom_portrait.jpg" media="(max-width:500px)">
+			<img src="lab1/images/mushroom_landscape.jpg" alt="Пейзаж с грибами">
+
+		</picture>
 	</section>
 </body>
 </html>
